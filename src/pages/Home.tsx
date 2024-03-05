@@ -2,12 +2,16 @@ import Rating from "../components/Rating";
 import AddThought from "../components/AddThought";
 import Profile from "../components/Joke";
 import Joke from "../components/Joke";
+import Thoughts from "../components/Thoughts";
 
 const Home = () => {
   return (
-    <div className="flex flex-col md:flex-row p-4 justify-between sm:space-x-3 ">
+    <div className="grid  gap-4 p-4 grid-cols-1 divide-y  md:grid-cols-3 md:divide-x divide-transparent">
       <Joke />
-      <AddThought />
+      <div>
+        <AddThought />
+        <Thoughts />
+      </div>
       <Rating />
     </div>
   );
